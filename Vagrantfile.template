@@ -1,0 +1,7 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/gentoo"
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 4096
+  end
+  config.vm.synced_folder ".", "${PROJECT_ROOT}", mount_options: ["uid=${APP_USER_UID}", "gid=${APP_USER_UID}"]
+end

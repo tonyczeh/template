@@ -1,0 +1,6 @@
+*.py[cdow]
+.*.swp
+.*DS_Store
+.vagrant/
+__pycache__/
+Vagrantfile
